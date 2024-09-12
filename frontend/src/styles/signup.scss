@@ -1,0 +1,68 @@
+@import "colors";
+
+.signup {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .signup-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+
+    h2 {
+      margin-bottom: 1.5rem;
+      color: $lightdark;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+      width: 100%;
+
+      label {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        color: $dark;
+      }
+
+      input {
+        padding: 0.8rem;
+        border: 1px solid #999;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+    }
+
+    button {
+      background-color:  #ADD8E6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #333;
+      }
+    }
+    .extra-options {
+        margin-top: 1rem;
+        text-align: center;
+    }
+  }
+}
